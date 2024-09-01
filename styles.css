@@ -1,6 +1,11 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    height: 100vh; /* Full height for vertical centering */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: relative; /* Position relative for video background */
 }
 
 #bg-video {
@@ -26,8 +31,6 @@ body {
     max-width: 400px;
     z-index: 1;
     position: relative;
-    margin: auto; /* Center container */
-    backdrop-filter: blur(10px); /* Blur effect behind the container for better readability */
 }
 
 .logo {
@@ -36,6 +39,12 @@ body {
     border-radius: 50%; /* Make the logo round */
     margin-bottom: 15px; /* Space between logo and text */
     object-fit: cover; /* Ensure the logo fits well in the circle */
+    transition: transform 0.3s ease; /* Animation for scaling */
+}
+
+/* Logo Hover Animation */
+.logo:hover {
+    transform: scale(1.1); /* Scale up on hover */
 }
 
 h1 {
