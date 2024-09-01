@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#bg-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque for better readability */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    z-index: 1;
+    position: relative;
+    margin: auto; /* Center container */
+}
+
+.logo {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+    border-radius: 50%; /* Make the logo round */
+    margin-bottom: 15px; /* Space between logo and text */
+    object-fit: cover; /* Ensure the logo fits well in the circle */
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #333; /* Darker text for better contrast */
+}
+
+p {
+    margin: 10px 0 20px;
+    color: #666;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn {
+    background-color: transparent;
+    color: #4CAF50;
+    border: 2px solid #4CAF50;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    display: inline-block; /* Ensure it works with the animation */
+}
+
+/* Button Sizes */
+.btn.small {
+    padding: 10px 15px; /* Small button size */
+    font-size: 14px; /* Smaller font size */
+}
+
+.btn.medium {
+    padding: 15px 20px; /* Medium button size */
+    font-size: 16px; /* Medium font size */
+}
+
+/* Hover Effects */
+.btn:hover {
+    background-color: #4CAF50;
+    color: white;
+    animation: shake 0.5s; /* Trigger shake animation on hover */
+}
+
+/* Shake Animation */
+@keyframes shake {
+    0% { transform: translate(0); }
+    25% { transform: translate(-5px, 0); }
+    50% { transform: translate(5px, 0); }
+    75% { transform: translate(-5px, 0); }
+    100% { transform: translate(0); }
+}
+
+.socials {
+    margin-top: 20px;
+}
+
+.social {
+    margin: 0 10px;
+    color: #4CAF50;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social:hover {
+    color: #45a049;
+}
+
+/* Contact Button */
+.contact-btn {
+    position: fixed;
+    right: 20px; /* Position from the right */
+    bottom: 20px; /* Position from the bottom */
+    background-color: #4CAF50; /* Button background color */
+    color: white; /* Text color */
+    padding: 15px 20px; /* Padding for the button */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s, transform 0.3s; /* Transition effects */
+    z-index: 100; /* Ensure it stays on top */
+}
+
+/* Hover Effect */
+.contact-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly grow on hover */
+}
