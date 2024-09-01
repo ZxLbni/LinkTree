@@ -41,12 +41,12 @@ body {
 h1 {
     margin: 0;
     font-size: 24px;
-    color: #333; /* Darker text for better contrast */
+    color: #fff; /* White text for better contrast on video background */
 }
 
 p {
     margin: 10px 0 20px;
-    color: #666;
+    color: rgba(255, 255, 255, 0.8); /* Slightly transparent white for text */
 }
 
 .links {
@@ -56,32 +56,31 @@ p {
 }
 
 .btn {
-    background-color: transparent;
-    color: #4CAF50;
-    border: 2px solid #4CAF50;
+    background-color: transparent; /* Transparent background */
+    color: #4CAF50; /* Button text color */
     text-decoration: none;
+    border: none; /* No border for buttons */
     border-radius: 5px;
     transition: all 0.3s ease;
     font-weight: bold;
     display: inline-block; /* Ensure it works with the animation */
     position: relative; /* For animation effects */
+    padding: 10px 20px; /* Add padding for better click area */
 }
 
 /* Button Sizes */
 .btn.small {
-    padding: 8px 12px; /* Small button size */
     font-size: 14px; /* Smaller font size */
 }
 
 .btn.medium {
-    padding: 12px 18px; /* Medium button size */
     font-size: 16px; /* Medium font size */
 }
 
 /* Hover Effects */
 .btn:hover {
-    background-color: #4CAF50;
-    color: white;
+    background-color: rgba(76, 175, 80, 0.5); /* Slightly green background on hover */
+    color: white; /* Change text color on hover */
     animation: shake 0.5s; /* Trigger shake animation on hover */
 }
 
@@ -117,7 +116,7 @@ p {
     background-color: transparent; /* Transparent background */
     color: #4CAF50; /* Button text color */
     padding: 10px 15px; /* Smaller padding for the button */
-    border: 2px solid #4CAF50; /* Border for the button */
+    border: none; /* No border for the button */
     border-radius: 5px; /* Rounded corners */
     text-decoration: none; /* Remove underline */
     font-weight: bold; /* Bold text */
@@ -127,7 +126,7 @@ p {
 
 /* Hover Effect for Contact Button */
 .contact-btn:hover {
-    background-color: #4CAF50; /* Darker green on hover */
+    background-color: rgba(76, 175, 80, 0.5); /* Darker green on hover */
     color: white; /* Change text color on hover */
     transform: scale(1.05); /* Slightly grow on hover */
 }
